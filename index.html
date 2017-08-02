@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://unpkg.com/seethru@3.1.0/dist/seeThru.min.js"></script>
+		<style type="text/css">
+			body {
+				position: relative;
+				background: linear-gradient(135deg, red, blue);
+			}
+		</style>
+	</head>
+	<body>
+		<video onended="this.play();" autoplay="" loop="" id="staticAlphaDemo">
+	        <source src="video.mp4" type="video/mp4">
+	    </video>
+	    <video onended="this.play();" autoplay="" loop="" id="staticAlphaDemo2">
+	        <source src="video.mp4" type="video/mp4">
+	    </video>
+	    <video onended="this.play();" autoplay="" loop="" id="staticAlphaDemo3">
+	        <source src="video.mp4" type="video/mp4">
+	    </video>
+	    <video onended="this.play();" autoplay="" loop="" id="staticAlphaDemo4">
+	        <source src="video.mp4" type="video/mp4">
+	    </video>
+	    <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            seeThru.create('#staticAlphaDemo', {});
+            seeThru.create('#staticAlphaDemo2', {});
+            seeThru.create('#staticAlphaDemo3', {});
+            seeThru.create('#staticAlphaDemo4', {});
+          });
+        </script>
+	</body>
+</html>
